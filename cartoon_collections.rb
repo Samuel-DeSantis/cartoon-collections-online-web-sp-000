@@ -15,6 +15,6 @@ def find_the_cheese(snacks)
   if (snacks & cheese_types) === []
     return nil
   else
-    return (snacks & cheese_types)
+    return "#{(snacks & cheese_types)}"
   end
 end
