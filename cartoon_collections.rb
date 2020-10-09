@@ -12,7 +12,7 @@ end
 
 def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  unless (snacks & cheese_types) === nil
+  unless (snacks & cheese_types) === []
     return nil
   end
   return (snacks & cheese_types)
