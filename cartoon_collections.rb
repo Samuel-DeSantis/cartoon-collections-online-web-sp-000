@@ -12,5 +12,9 @@ end
 
 def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  snacks.any? { |snack| snack === cheese_types[0] || snack === cheese_types[1] || snack === cheese_types[2] }
+  if snacks.include?(cheese_types)
+    snacks.find { |snack| (snack === cheese_types[0] || snack === cheese_types[1] || snack === cheese_types[2]) }
+  else
+    return nil
+  end
 end
